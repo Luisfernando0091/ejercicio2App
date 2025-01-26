@@ -9,9 +9,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _currentValue = 0; // Valor inicial en 0
-  final int _targetValue = 40; // Número ganador
-  bool _gameWon = false; // Variable para controlar si el juego se ha ganado
+  // Recuerda usar cuando se declara una variable y se inicializa en la misma linea
+  var _currentValue = 0; // Valor inicial en 0
+  var _gameWon = false; // Variable para controlar si el juego se ha ganado
+  // Cuando declaras una variable final y la inicializas en la misma linea, no es necesario el tipo de dato
+  final _targetValue = 40; // Número ganador
 
   String _feedbackMessage() {
     if (_gameWon) {
